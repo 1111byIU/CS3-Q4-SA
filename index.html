@@ -206,6 +206,7 @@
     <h3>Correction Tape</h3>
     <button class="addToCart" type="button" data-name="Correction Tape" data-price="5775">Add to Cart - &#8369;5775</button>
   </div>
+  
   <div class="proDis">
     <img src="markers.jpg" alt="Markers">
     <h3>Markers</h3>
@@ -314,7 +315,7 @@ function updateCart() {
   cart.forEach((item, index) => {
     const listItem = document.createElement("li");
     listItem.className = "list-group-item d-flex justify-content-between align-items-center";
-    listItem.innerHTML = ${item.name} - &#8369;${item.price.toLocaleString('en-US')};
+    listItem.innerHTML = `${item.name} - &#8369;${item.price.toLocaleString('en-US')}`;
 
     const removeButton = document.createElement("button");
     removeButton.className = "remove-item";
